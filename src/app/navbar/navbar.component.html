@@ -1,0 +1,11 @@
+<div class="row">
+  <div class="col-xs-2" [ngStyle]="{border:'1px solid blue'}">
+    <h1></h1>
+  </div>
+  <div class="col-xs-6 nav-container" [ngStyle]="{border:'1px solid green'}">
+    <nav>
+      <a *ngFor="let link of routes" [routerLink]="[link.path]">{{ link.title }}</a>
+    </nav>
+  </div>
+  <div class="col-xs-4" [ngStyle]="{border:'1px solid black'}"><i class="fa fa-user-circle-o" aria-hidden="true"></i>{{ currUser ? currUser.username : ''}}</div>
+</div>

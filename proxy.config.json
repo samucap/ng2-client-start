@@ -1,0 +1,11 @@
+{
+  "/api/*": {
+    "target": {
+      "host": "riotriot-cerebral.appspot.com",
+      "protocol": "http:"
+    },
+    "changeOrigin": true,
+    "secure": false,
+    "loglevel": "info"
+  }
+}
